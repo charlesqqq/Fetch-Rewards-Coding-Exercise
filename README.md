@@ -11,13 +11,14 @@ You can also use IntelliJ IDEA to run the application:
 1. Download the project
 2. Download IntelliJ IDEA
 3. Import it as a Maven project
-4. Use IntelliJ IDEA to run the application 
+4. Use IntelliJ IDEA to run the application
 
 APIs:
 1. Add transaction  
-POST http://localhost:8080/transactions
+POST http://localhost:8080/transactions   
+Request Payload Example: { "payer": "DANNON", "points": 300, "timestamp": "2022-10-31T10:00:00Z" }
 2. Spend points  
-POST http://localhost:8080/points
+POST http://localhost:8080/points  
+Request Payload Example: { "points": 5000 }
 3. Get balance  
 GET http://localhost:8080/balances
-
